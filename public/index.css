@@ -1,0 +1,24 @@
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+main .pagina {
+    display: none;
+    width: 400px;
+    height: 300px;
+    border-radius: 10%;
+    background-color: antiquewhite;
+}
+
+main .pagina:nth-child(2n) {
+    display: inline-block;
+}
+
+main .nuevo {
+    position: absolute;
+}
