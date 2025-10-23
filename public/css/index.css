@@ -1,0 +1,110 @@
+@import url("colores.css");
+
+main {
+    display: grid;
+    position: relative;
+    grid-template-areas: 
+        "lateral  seccion1"
+        "lateral  seccion2"
+        "seccion3 seccion3"
+        "seccion4 seccion4";
+    grid-template-columns: 2fr 8fr;
+    gap: 30px;
+    margin: auto;
+    width: 90%;
+    perspective: 1000px;
+    z-index: -10;
+}
+
+main > *:nth-child(2) { grid-area: seccion1; }
+main > *:nth-child(3) { grid-area: seccion2; }
+main > *:nth-child(4) { grid-area: seccion3; }
+main > *:nth-child(5) { grid-area: seccion4; }
+
+main > *:nth-child(2) { background-color: var(--bg-green); }
+main > *:nth-child(3) { background-color: var(--bg-yellow); }
+main > *:nth-child(5) { background-color: var(--bg-orange); }
+
+main .seccion {
+    display: flex;
+    justify-content: center;
+    padding: 30px 10%;
+    border-radius: 20px;
+    box-shadow: 2px 5px 10px #aaa;
+}
+
+main .seccion img {
+    width: 200px;
+    height: fit-content;
+    margin-left: 50px;
+}
+
+main .menu-lateral {
+    grid-area: lateral;
+    background-color: var(--bg-white);
+    padding: 15px 25px;
+    border-radius: 10px;
+}
+
+main .cubo {
+    animation: rotate 20s infinite linear;
+    transform-style: preserve-3d;
+    width: 200px;
+    height: 200px;
+    margin: 50px 0;
+}
+
+main .cubo .pagina {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+main .cubo #l1 {
+    background-color: var(--bg-red);
+    transform: translateZ(100px);
+}
+
+main .cubo #l2 {
+    background-color: var(--bg-blue);
+    transform: rotateY(180deg) translateZ(100px);
+}
+
+main .cubo #l3 {
+    background-color: var(--bg-green);
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+main .cubo #l4 {
+    background-color: var(--bg-white);
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
+main .cubo #l5 {
+    background-color: var(--bg-yellow);
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+main .cubo #l6 {
+    background-color: var(--bg-orange);
+    transform: rotateX(-90deg) translateZ(100px);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  25% {
+    transform: rotateX(90deg) rotateY(90deg);
+  }
+  50% {
+    transform: rotateX(180deg) rotateY(180deg);
+  }
+  75% {
+    transform: rotateX(270deg) rotateY(270deg);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
