@@ -12,7 +12,7 @@
 </head>
 <body>
     <?php include("views/menu.php"); ?>
-    <main class="container-fluid">
+    <main>
         <aside class="menu-lateral">
             <h2>Whats New?</h2>
         </aside>

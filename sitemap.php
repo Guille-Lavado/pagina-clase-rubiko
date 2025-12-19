@@ -11,15 +11,13 @@
 </head>
 <body>
     <?php include("views/menu.php"); ?>
-    <div class="container">
-        <ul>
-            <?php foreach(scandir("./") as $file): ?>
-                <?php if (is_file($file) && explode(".", $file)[1] == "php"): ?>
-                    <li><a href=<?= $file ?>><?= $file ?></a></li>
-                <?php endif ?>
-            <?php endforeach ?>
-        </ul>
-    </div>
+    <ul>
+        <?php foreach(scandir("./") as $file): ?>
+            <?php if (is_file($file) && explode(".", $file)[1] == "php"): ?>
+                <li><a href=<?= $file ?>><?= $file ?></a></li>
+            <?php endif ?>
+        <?php endforeach ?>
+    </ul>
     <?php include("views/footer.php") ?>
 </body>
 </html>

@@ -13,8 +13,8 @@
 </head>
 <body>
     <?php include("views/menu.php"); ?>
-    <main class="container-fluid">
-        <section class="row">
+    <main>
+        <section>
             <h1>¿Por que esta web?</h1>
             <p>
                 Esta web esta pensanda como una empresa que vende exclusivamente cubos de rubik,

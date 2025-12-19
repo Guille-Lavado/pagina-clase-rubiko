@@ -13,25 +13,23 @@
 </head>
 <body>
     <?php include("views/menu.php"); ?>
-    <div class="container">
-        <div class="formulario">
-            <h1>Contacto</h1>
-            <form>
-                <div class="form-group">
-                    <label>Nombre</label>
-                    <input type="text" placeholder="Tu nombre">
-                </div>
-                <div class="form-group">
-                    <label>Email</label>
-                    <input type="email" placeholder="tu@email.com">
-                </div>
-                <div class="form-group">
-                    <label>Mensaje</label>
-                    <textarea placeholder="¿En qué puedo ayudarte?"></textarea>
-                </div>
-                <input type="submit" class="btn btn-primary text-white" value="Enviar mensaje">
-            </form>
-        </div>
+    <div class="formulario">
+        <h1>Contacto</h1>
+        <form>
+            <div>
+                <label>Nombre</label>
+                <input type="text" placeholder="Tu nombre">
+            </div>
+            <div>
+                <label>Email</label>
+                <input type="email" placeholder="tu@email.com">
+            </div>
+            <div>
+                <label>Mensaje</label>
+                <textarea placeholder="¿En qué puedo ayudarte?"></textarea>
+            </div>
+            <input type="submit" value="Enviar mensaje">
+        </form>
     </div>
     <?php include("views/footer.php"); ?>
 </body>
