@@ -1,0 +1,25 @@
+@use "colores";
+
+footer {
+    background-color: colores.$bg-red;
+    padding: 20px 30px;
+    padding-left: 5%;
+    margin-top: 50px;
+    
+    p {
+        font-size: 1.05rem;
+    }
+
+    a {
+        border: 1px solid white;
+        padding: 7px 15px;
+        margin-right: 10px;
+
+        &:hover {
+            background-color: rgb(255, 73, 73);
+        }
+    }
+}
+
+// Importa Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";

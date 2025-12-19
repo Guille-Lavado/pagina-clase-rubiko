@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/css/footer.css">
-    <link rel="stylesheet" href="public/css/menu.css">
+    <link rel="stylesheet" href="public/scss/footer.css">
+    <link rel="stylesheet" href="public/scss/footer.css.map">
+    <link rel="stylesheet" href="public/scss/menu.css">
+    <link rel="stylesheet" href="public/scss/menu.css.map">
+    <link rel="stylesheet" href="public/scss/quienesSomos.css">
+    <link rel="stylesheet" href="public/scss/quienesSomos.css.map">
     <title>Accerca De</title>
-    <link rel="stylesheet" href="public/css/quienesSomos.css">
 </head>
 <body>
     <?php include("views/menu.php"); ?>
-    <main>
-        <section>
+    <main class="container-fluid">
+        <section class="row">
             <h1>¿Por que esta web?</h1>
             <p>
                 Esta web esta pensanda como una empresa que vende exclusivamente cubos de rubik,

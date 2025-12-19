@@ -1,0 +1,16 @@
+// Mixin para centrar elementos en columna
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+// Variables
+$bg-shadow: 2px 5px 10px #aaa;
+
+section {
+  @include flex-column-center;
+  padding: 30px 10%;
+  border-radius: 20px;
+  box-shadow: $bg-shadow;
+}

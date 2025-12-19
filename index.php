@@ -1,29 +1,18 @@
-<?php
-    /*
-    require_once("lib/Router.php");
-
-    $router = new Router();
-
-    // Definimos rutas
-    $router->add($_SERVER['REQUEST_URI'], 'Controlador@index');
-
-    $router->dispatch($_SERVER['REQUEST_URI']);
-    */
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/css/index.css">
-    <link rel="stylesheet" href="public/css/menu.css">
-    <link rel="stylesheet" href="public/css/footer.css">
+    <link rel="stylesheet" href="public/scss/footer.css">
+    <link rel="stylesheet" href="public/scss/footer.css.map">
+    <link rel="stylesheet" href="public/scss/menu.css">
+    <link rel="stylesheet" href="public/scss/menu.css.map">
+    <link rel="stylesheet" href="public/scss/index.css">
     <title>Home</title>
 </head>
 <body>
     <?php include("views/menu.php"); ?>
-    <main>    
+    <main class="container-fluid">
         <aside class="menu-lateral">
             <h2>Whats New?</h2>
         </aside>

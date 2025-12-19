@@ -1,0 +1,8 @@
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 10%;
+  border-radius: 20px;
+  box-shadow: 2px 5px 10px #aaa;
+}/*# sourceMappingURL=quienesSomos.css.map */

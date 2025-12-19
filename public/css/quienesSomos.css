@@ -1,8 +1,0 @@
-section {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 30px 10%;
-    border-radius: 20px;
-    box-shadow: 2px 5px 10px #aaa;
-}

@@ -1,0 +1,100 @@
+main {
+  display: grid;
+  position: relative;
+  grid-template-areas: "lateral  seccion1" "lateral  seccion2" "seccion3 seccion3" "seccion4 seccion4";
+  grid-template-columns: 2fr 8fr;
+  gap: 30px;
+  margin: auto;
+  width: 90%;
+  perspective: 1000px;
+  z-index: -10;
+}
+main > *:nth-child(2) {
+  grid-area: seccion1;
+  background-color: rgb(32, 196, 32);
+}
+main > *:nth-child(3) {
+  grid-area: seccion2;
+  background-color: rgb(220, 220, 2);
+}
+main > *:nth-child(4) {
+  grid-area: seccion3;
+}
+main > *:nth-child(5) {
+  grid-area: seccion4;
+  background-color: orange;
+}
+main .seccion {
+  display: flex;
+  justify-content: center;
+  padding: 30px 10%;
+  border-radius: 20px;
+  box-shadow: 2px 5px 10px #aaa;
+}
+main .seccion img {
+  width: 200px;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-left: 50px;
+}
+main .menu-lateral {
+  grid-area: lateral;
+  background-color: rgb(230, 230, 230);
+  padding: 15px 25px;
+  border-radius: 10px;
+}
+main .cubo {
+  width: 200px;
+  height: 200px;
+  margin: 50px 0;
+  transform-style: preserve-3d;
+  animation: rotate 20s infinite linear;
+}
+main .cubo .pagina {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+main .cubo #l1 {
+  background-color: rgb(254, 40, 40);
+  transform: translateZ(100px);
+}
+main .cubo #l2 {
+  background-color: rgb(78, 119, 196);
+  transform: rotateY(180deg) translateZ(100px);
+}
+main .cubo #l3 {
+  background-color: rgb(32, 196, 32);
+  transform: rotateY(90deg) translateZ(100px);
+}
+main .cubo #l4 {
+  background-color: rgb(230, 230, 230);
+  transform: rotateY(-90deg) translateZ(100px);
+}
+main .cubo #l5 {
+  background-color: rgb(220, 220, 2);
+  transform: rotateX(90deg) translateZ(100px);
+}
+main .cubo #l6 {
+  background-color: orange;
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  25% {
+    transform: rotateX(90deg) rotateY(90deg);
+  }
+  50% {
+    transform: rotateX(180deg) rotateY(180deg);
+  }
+  75% {
+    transform: rotateX(270deg) rotateY(270deg);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}/*# sourceMappingURL=index.css.map */
